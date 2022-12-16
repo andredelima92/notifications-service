@@ -19,7 +19,7 @@ describe('Get Recipient notifications', () => {
     });
 
     expect(notifications).toHaveLength(2);
-    expect(notifications).toEqual(
+    expect(notifications).toStrictEqual(
       expect.arrayContaining([
         expect.objectContaining({ recipientId: 'recipient-1' }),
         expect.objectContaining({ recipientId: 'recipient-1' }),
